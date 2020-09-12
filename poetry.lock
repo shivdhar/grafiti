@@ -1,8 +1,142 @@
-package = []
+[[package]]
+category = "main"
+description = "Annotate AST trees with source code positions"
+name = "asttokens"
+optional = false
+python-versions = "*"
+version = "2.0.4"
+
+[package.dependencies]
+six = "*"
+
+[package.extras]
+test = ["astroid", "pytest"]
+
+[[package]]
+category = "main"
+description = "Cross-platform colored terminal text."
+name = "colorama"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "0.4.3"
+
+[[package]]
+category = "main"
+description = "Get the currently executing AST node of a frame, and other information"
+name = "executing"
+optional = false
+python-versions = "*"
+version = "0.5.2"
+
+[[package]]
+category = "main"
+description = "Inspect variables, expressions, and program execution with a single, simple function call."
+name = "icecream"
+optional = false
+python-versions = "*"
+version = "2.0.0"
+
+[package.dependencies]
+asttokens = ">=2.0.1"
+colorama = ">=0.3.9"
+executing = ">=0.3.1"
+pygments = ">=2.2.0"
+
+[[package]]
+category = "main"
+description = "Pygments is a syntax highlighting package written in Python."
+name = "pygments"
+optional = false
+python-versions = ">=3.5"
+version = "2.6.1"
+
+[[package]]
+category = "dev"
+description = "Call stack profiler for Python. Shows you why your code is slow!"
+name = "pyinstrument"
+optional = false
+python-versions = "*"
+version = "3.2.0"
+
+[package.dependencies]
+pyinstrument-cext = ">=0.2.2"
+
+[[package]]
+category = "dev"
+description = "A CPython extension supporting pyinstrument"
+name = "pyinstrument-cext"
+optional = false
+python-versions = "*"
+version = "0.2.2"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.15.0"
 
 [metadata]
-content-hash = "ae1f216c71b9b712a5c479d19bf075b718c35d9248fd89cb1eb7624528ec5ad1"
+content-hash = "aed86b424fdea01ef85bc6a6ae775cbc14a04fd0ab2dd03412df691fce508559"
 lock-version = "1.0"
 python-versions = "^3.6"
 
 [metadata.files]
+asttokens = [
+    {file = "asttokens-2.0.4-py2.py3-none-any.whl", hash = "sha256:766d3352908730efb20b95ae22db0f1cb1bedb67c6071fcffb5c236ea673f2f7"},
+    {file = "asttokens-2.0.4.tar.gz", hash = "sha256:a42e57e28f2ac1c85ed9b1f84109401427e5c63c04f61d15b8842b027eec5128"},
+]
+colorama = [
+    {file = "colorama-0.4.3-py2.py3-none-any.whl", hash = "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff"},
+    {file = "colorama-0.4.3.tar.gz", hash = "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"},
+]
+executing = [
+    {file = "executing-0.5.2-py3-none-any.whl", hash = "sha256:3325b1d83f77d73fd0823f1fc667fccb46e30377f01f17348689d185b59128f4"},
+]
+icecream = [
+    {file = "icecream-2.0.0-py2.py3-none-any.whl", hash = "sha256:9000acd16dc9d3c78a95ac9abc54c172e4f47fbd54541ab10d280fae5bfb8efa"},
+    {file = "icecream-2.0.0.tar.gz", hash = "sha256:434e14a50da01f9dc1e5757efec7613db5df048ebdcecd460236db41688f779a"},
+]
+pygments = [
+    {file = "Pygments-2.6.1-py3-none-any.whl", hash = "sha256:ff7a40b4860b727ab48fad6360eb351cc1b33cbf9b15a0f689ca5353e9463324"},
+    {file = "Pygments-2.6.1.tar.gz", hash = "sha256:647344a061c249a3b74e230c739f434d7ea4d8b1d5f3721bc0f3558049b38f44"},
+]
+pyinstrument = [
+    {file = "pyinstrument-3.2.0-py2.py3-none-any.whl", hash = "sha256:266a02d874799a8e06889ed9030dcef518b61c7a8e64a3a0ad0754645f901285"},
+    {file = "pyinstrument-3.2.0.tar.gz", hash = "sha256:ce8fef6ea88349f0060b6d974483fd64d2c061346e6b78bca6357509a5121665"},
+]
+pyinstrument-cext = [
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:682683207d2100b54b3a649de4ab35264ab7a67607e1733732d8c6762bc79ee6"},
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:a1899c13683de603480595df06b6b0101bbce128aa294c68c2b4165f586f5016"},
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:e66e17856c4e916a2f503d39529947bce9c16cab983fed549225fe84202aa96a"},
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27m-win32.whl", hash = "sha256:b711fdad86e82f0ffee4347f6854524ff8df0f96f0ac73fcee38cfb4fe58826e"},
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27m-win_amd64.whl", hash = "sha256:42f19056aed6c06aff5491f8de840ac89cd7dbcf1b46e820b00d1319e50ef5ea"},
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:aaacc34a0c2f05be503d12455eef7c1e43381db83552e47d07f8ba44ec29b17d"},
+    {file = "pyinstrument_cext-0.2.2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:49d0b9f981ebf20abdcac73d23a3871dda445e7da15d318982d081aaed885788"},
+    {file = "pyinstrument_cext-0.2.2-cp34-cp34m-macosx_10_6_intel.whl", hash = "sha256:5ff19426b066b64370bb4dfbe6b6eb558e792fd2893581905470d4e5be6459bc"},
+    {file = "pyinstrument_cext-0.2.2-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:b087e63b2419fa6e130781bcdf6a16aae8e9620cac3860f65cec71a2ccb057f8"},
+    {file = "pyinstrument_cext-0.2.2-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:e9e0af9d122a43e4e9cf6cd44042aa434230f6ea6c5122ee0e812aa6d648b57c"},
+    {file = "pyinstrument_cext-0.2.2-cp34-cp34m-win32.whl", hash = "sha256:8f52067a9bf9e04227469a64cc2ed9209a814369f85c3b6b87b99d2bc51d2275"},
+    {file = "pyinstrument_cext-0.2.2-cp34-cp34m-win_amd64.whl", hash = "sha256:9c09af4b376d699337cdd8733d00b9720f4529ceea4a2e9b41aab65f56af9840"},
+    {file = "pyinstrument_cext-0.2.2-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:faa497b3800736f398ae415f2c161c646fe8fbfbc922ce16bdd30d8727cdc19d"},
+    {file = "pyinstrument_cext-0.2.2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:2346e5f2424d227be82ca5d5fb3c306cf44131b0fec0413bd182d4ef83553f2e"},
+    {file = "pyinstrument_cext-0.2.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:38ac36f73e8a767ed86ac8d66f834cf34f4bb2e0cc2ada9a51ae4852e5721cd4"},
+    {file = "pyinstrument_cext-0.2.2-cp35-cp35m-win32.whl", hash = "sha256:4cd18fb31bba6ce6a04600ddccb487f26451bc6a4158f81479953be453c10ef8"},
+    {file = "pyinstrument_cext-0.2.2-cp35-cp35m-win_amd64.whl", hash = "sha256:6b1efbd16e208cc603b9a4382de08890245ebb871f59bb359923ad3100759304"},
+    {file = "pyinstrument_cext-0.2.2-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:aabb743d3718e01249ff64ebae126defb23476f5921d18dff99fd2b065110e55"},
+    {file = "pyinstrument_cext-0.2.2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:750e2ab431bbb4196ba9786a85497d95cb14d1927514ce72e12ff9c3699a9318"},
+    {file = "pyinstrument_cext-0.2.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:1fd53cc3213a2c89626c359e5788500217e91c75d01dd2e178a0e53aa905f1dd"},
+    {file = "pyinstrument_cext-0.2.2-cp36-cp36m-win32.whl", hash = "sha256:25956082420f9a8c7ae2353921d59575f6acfd1d703d1188c117efd56d9baecf"},
+    {file = "pyinstrument_cext-0.2.2-cp36-cp36m-win_amd64.whl", hash = "sha256:6e673c46f88c63c9588be74b12cf8a21071cedc80292610e160fe751c1a80199"},
+    {file = "pyinstrument_cext-0.2.2-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:731438b4a813992271f181510a293c950bb0d10eec70c787b80951e9b34a1f8f"},
+    {file = "pyinstrument_cext-0.2.2-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:02ad14a4949b16bc51e87a53799014f4d3b01e814d4cc0d29d66018fe76552f0"},
+    {file = "pyinstrument_cext-0.2.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:8559799767c297771e7602f4b59b47f62536f0431b799c3df34aea2ee56f9abb"},
+    {file = "pyinstrument_cext-0.2.2-cp37-cp37m-win32.whl", hash = "sha256:ef26fed4b80c409e26115e22382740917a2f3fc421f9eb9e23fa31b23ca57d2d"},
+    {file = "pyinstrument_cext-0.2.2-cp37-cp37m-win_amd64.whl", hash = "sha256:3e2142eceb4e47274b7f1770fe85601094d24146813bbf00f0a37106b080d803"},
+    {file = "pyinstrument_cext-0.2.2.tar.gz", hash = "sha256:f29e25f71d74c0415ca9310e5567fff0f5d29f4240a09a885abf8b0eed71cc5b"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]

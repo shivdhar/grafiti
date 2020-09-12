@@ -2,14 +2,20 @@
 name = "grafiti"
 version = "0.1.0"
 description = "Automatic graph-based dependency resolution"
-authors = ["Shiv Dhar <shivdhar@gmail.com>"]
+authors = ["Shiv Dhar <shiv.dhar@gmail.com>"]
 license = "GPL-3.0-only"
 
 [tool.poetry.dependencies]
 python = "^3.6"
+icecream = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
+pyinstrument = "^3.2.0"
 
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
