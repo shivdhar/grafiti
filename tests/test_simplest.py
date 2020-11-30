@@ -1,4 +1,4 @@
-from grafiti import Node
+from grafiti import Node, Graph
 from icecream import ic
 
 print=ic
@@ -14,7 +14,15 @@ node = Node(sample_func, depends_on=[n2_node])
 node_n3 = Node(n3, depends_on=[node])
 print()
 print(n2_node.output)
-ans = node.backward()
+ans = node_n3.backward()
 print(node.output)
 
 print((n2_node.output))
+print(node_n3.output)
+
+# n3 -> node -> n2
+g = Graph()
+g.add_node(n3, depends_on=[sample_func])
+final = g.add_node(sample_func, depends_on=[n2])
+
+final.backward()

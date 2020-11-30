@@ -8,9 +8,12 @@ license = "GPL-3.0-only"
 [tool.poetry.dependencies]
 python = "^3.6"
 icecream = "^2.0.0"
+pdbpp = "^0.10.2"
 
 [tool.poetry.dev-dependencies]
 pyinstrument = "^3.2.0"
+pdbpp = "^0.10.2"
+sphinx = "^3.3.1"
 
 [tool.dephell.main]
 from = {format = "poetry", path = "pyproject.toml"}
@@ -18,4 +21,3 @@ to = {format = "setuppy", path = "setup.py"}
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
-

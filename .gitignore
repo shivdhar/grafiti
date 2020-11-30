@@ -1,1 +1,6 @@
 __pycache__
+
+.dephell_report/
+.vscode/
+dist/
+grafiti.egg-info/
