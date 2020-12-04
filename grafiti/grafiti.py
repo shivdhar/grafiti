@@ -8,7 +8,8 @@ from queue import Queue
 
 class Node:
     """The central object which represents everything
-    """ 
+    """
+
     def __init__(self, callable_, depends_on=None, *args, **kwargs):
         if not callable(callable_):
             raise Exception(f"{callable_} must be a callable")
@@ -66,3 +67,7 @@ class Graph:
 
     def __getitem__(self, item):
         return
+
+    def __call__(self, callable_, depends_on=None):
+        return self.add_node(callable_, depends_on=depends_on)
+
