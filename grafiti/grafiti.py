@@ -34,6 +34,11 @@ class Node:
         self.output = self.callable(*self.args, **self.kwargs)
         return self.output
 
+    def __le__(self, other):
+        if isinstance(other, Node):
+            other = [other]
+        self.depends_on = other
+
     def clear():
         for dependency in self.depends_on:
             dependency.clea
